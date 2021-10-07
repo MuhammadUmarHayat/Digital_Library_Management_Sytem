@@ -1,0 +1,18 @@
+
+
+
+<link rel="stylesheet" href="myStyles.css" />
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"  >
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+         
+		 <li class="nav-item"><a class="nav-link active" href="signup.jsp">Signup</a></li>
+          <li><a href="index.jsp">Login</a></li>
+          
+        </ul>
+		
+		
+		
+      </div>
+    </nav>

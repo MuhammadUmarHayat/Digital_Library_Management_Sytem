@@ -1,0 +1,7 @@
+SELECT issue_books.BookID,issue_books.BookTitle,issue_books.Date_of_Issue,issue_books.Date_of_Ret,booksfine.BookID,booksfine.BookTitle,booksfine.amount FROM `issue_books`INNER JOIN booksfine ON issue_books.BookID=booksfine.BookID
+WHERE StudentID='zu'
+///////////////////////////Fine book////////////////
+SELECT issue_books.BookID,issue_books.BookTitle,issue_books.Date_of_Issue,DATE_FORMAT(issue_books.Date_of_Ret, '%Y-%m-%d'),booksfine.BookID,booksfine.BookTitle,booksfine.amount FROM `issue_books`INNER JOIN booksfine ON issue_books.BookID=booksfine.BookID
+WHERE StudentID='zu' and issue_books.Date_of_Ret<CURDATE()
+////////////////////////////////////////////////
+SELECT count(DATEDIFF(Date_of_Ret,CURDATE())) As days FROM `issue_books` where BookID='7'
